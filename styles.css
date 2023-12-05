@@ -1,0 +1,131 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+}
+
+
+.container {
+    width: 900px;
+    max-width: 80%;
+    z-index: 300;
+    position: relative;
+    height:300px;
+}
+
+.btnsGrid {
+    display: grid; 
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-top: 2rem auto;
+    width: 100%;
+    
+}
+
+.btn{
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 100%, 30%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.btn:hover {
+    border-color: white;
+    background-color: hsl(0, 100%, 30%);
+    color: white;
+}
+.namecontainer {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+.health-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #ddd;
+    border: 2px solid #333;
+    position: relative;
+  }
+  
+  .health-status {
+    width: 100%;
+    height: 100%;
+    background-color: #4CAF50; /* Green */
+    transition: width 0.3s ease;
+  }
+  .text {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    max-width: 80%;
+  }
+
+  p{
+    color: white;
+  
+  }
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 20px; 
+    color: white;
+    overflow-x: auto;
+
+    
+    
+}
+ 
+
+  #log1, #log2{
+    min-width: 25vw;
+    max-height: 10px !important;
+    border: 1px solid black;
+    padding: 20px;
+    color: white;
+    overflow-x: auto;
+}
+.characterStat{
+  margin-top: auto;
+  max-height: fit-content;
+}
+
+.photo{
+  display: flex;
+  flex-direction: column;
+  border: solid black 10px;
+  position: fixed;
+  top: 0;
+}
+
+#locationImage {
+  border: solid, black 2px;
+}
+#description {
+  background-color: white;
+  text-align: center;
+}
